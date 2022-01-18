@@ -1,40 +1,211 @@
 <!DOCTYPE html>
-<html lang="es-ES">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Añadir Jugador</title>
-    <style>
-      .topnav a {
-        position: 16px;
-        float: left;
-        color: blue;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-      }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panesur | Home</title>
 
-      .topnav a:hover {
-        background-color: rgba(180, 15, 15, 0.63);
-        color: black;
-      }
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-      .topnav a.active {
-        background-color: #df8c26;
-        color: rgb(7, 133, 13);
-      }
-    </style>
-  </head>
-  <body>
-    <div class="topnav">
-      <a href="index.html">Añador jugador</a>
-      <a href="pag2.html">Añador equipo</a>
-      <a href="pag3.html">Asignar equipos</a>
+    <!-- custom css file link  -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    
+
+</head>
+<body>
+
+    <header>
+    
+        <a href="index.html" class="logo"><span>PANE</span>SUR</a>
+    
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="fas fa-bars"></label>
+    
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="noticias.html">noticias</a>
+            <a href="contacto.html">contacto</a>
+            <a href="about.html">about</a>
+            <a href="servicios.html">servicios</a>
+        </nav>
+    
+    </header>
+    
+    <!-- header section ends -->
+    
+    <!-- home section starts  -->
+    
+    <section class="home" id="home">
+    
+        <div class="content">
+            <h3> <span>TRADICIÓN Y CALIDAD</span></h3>
+            <p>Todos nuestros panes están realizados de forma artesanal. Panes de producción ecológica certificado por el Comité Andaluz de Agricultura Ecológica (CAAE)</p>
+            <a href="about.html" class="btn">Descubrenos</a>
+        </div>
+        <div class="image">
+            <img src="https://distribucio104.com/wp-content/uploads/2016/12/barra-sb.png" alt="">
+        </div>
+    
+    </section>
+
+<!-- home section ends -->
+
+<!-- Carousel -->
+<div id="carousel" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
     </div>
-    <iframe
-      width="1500"
-      height="1000"
-      src="https://docs.google.com/forms/d/e/1FAIpQLSdZ97iPdGX9V3qouHuceSB28p0uLDm5oJktG8sIfJ1DKbwY2Q/viewform"
-    ></iframe>
-  </body>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/panaderia3.jpg" alt="Primera" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="images/panaderia2.jpg" alt="Segunda" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="images/panaderia1.jpg" alt="Tercera" class="d-block w-100">
+      </div>
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+    <h1 class="heading"> Nuestro Equipo </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+                <img src="images/karlos.jpg" alt="">
+                <h3>Karlos Arguiñano</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="comment">
+                    El cocinero ha preparado en televisión más de 6.500 recetas, que se caracterizan por ser sencillas de elaborar, económicas y de temporada, respetando las técnicas y sabores tradicionales.
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+                <img src="images/gordonramsay.jpg" alt="">
+                <h3>Gordon Ramsay</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="comment">
+                    Gordon James Ramsay OBE es un chef, dueño de restaurantes y presentador de televisión británico. En toda su carrera gastronómica ha sido condecorado con 17 estrellas Michelin, de las que hoy mantiene siete.​​
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+                <img src="images/chicotemad.jpeg" alt="">
+                <h3>Alberto Chicote</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="comment">
+                    Alberto Chicote del Olmo es un chef, escritor y presentador de televisión español. En su trayectoria culinaria ha destacado por mezclar la cocina tradicional con otras técnicas, siendo uno de los pioneros de la cocina fusión en la gastronomía española.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- Footer -->
+
+<div class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Aviso Legal</h3>
+            <p>El acceso al sitio web de EL PROPIETARIO implica sin reservas la aceptación de las presentes condiciones generales de uso que el USUARIO afirma comprender en su totalidad.</p>
+        </div>
+
+        <div class="box">
+            <h3>Menu</h3>
+            <a href="index.html">home</a>
+            <a href="noticias.html">noticias</a>
+            <a href="contacto.html">contacto</a>
+            <a href="about.html">about</a>
+            <a href="servicios.html">servicios</a>
+        </div>
+
+        <div class="box">
+            <h3>Siguenos</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+        </div>
+
+        <div class="box">
+            <h3>Contacto</h3>
+            <div class="info">
+                <i class="fas fa-phone"></i>
+                <p> +34 952553678 <br> +34 722422267</p>
+            </div>
+            <div class="info">
+                <i class="fas fa-envelope"></i>
+                <p> panesur@gmail.com <br> ayuda@panesur.com </p>
+            </div>
+            <div class="info">
+                <i class="fas fa-map-marker-alt"></i>
+                <p> Malaga, España - 29004 </p>
+            </div>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> &copy; Copyright @ 2022 hecho por Grupo 3 </h1>
+
+</div>
+
+<!-- Footer -->
+
+</body>
 </html>
